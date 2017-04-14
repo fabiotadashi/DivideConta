@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fabiomiyasato.divideconta.FechaContaActivity">
+
+    <TextView
+        android:id="@+id/labelValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/total_value"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvQuantidade"
+        android:layout_alignEnd="@+id/tvQuantidade" />
+
+    <TextView
+        android:id="@+id/tvQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/number_people"
+        android:layout_below="@+id/labelValorTotal"
+        android:layout_alignLeft="@+id/labelValorTotal"
+        android:layout_alignStart="@+id/labelValorTotal" />
+
+    <EditText
+        android:id="@+id/etQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/tvQuantidade"
+        android:layout_alignLeft="@+id/tvQuantidade"
+        android:layout_alignStart="@+id/tvQuantidade" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etQuantidade"
+        android:layout_alignStart="@+id/etQuantidade"
+        android:layout_below="@+id/etQuantidade"
+        android:text="@string/calcular"/>
+
+    <TextView
+        android:id="@+id/tvResumo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="19dp"
+        android:text="TextView"
+        android:layout_below="@+id/btCalcular" />
+</RelativeLayout>
